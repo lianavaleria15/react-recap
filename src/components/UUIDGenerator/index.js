@@ -1,8 +1,17 @@
 import "./UUIDGenerator.css";
+import { v4 as uuidv4 } from "uuid";
+import { useState } from "react";
 
 export const UUIDGenerator = () => {
+  //use use state HOOK
+  const [uuid, setUUID] = useState("Generated UUID will be displayed here");
+
   const generateUUID = () => {
-    console.log("click");
+    //generate random UUID
+    const randomUUID = uuidv4();
+
+    //console.log random UUID
+    setUUID(randomUUID);
   };
 
   return (
@@ -13,7 +22,7 @@ export const UUIDGenerator = () => {
         </button>
       </div>
       <div className="uuid-item uuid-text-block">
-        <h3 className="uuid-text">Generated UUID will be displayed here</h3>
+        <h3 className="uuid-text">{uuid}</h3>
       </div>
     </section>
   );
