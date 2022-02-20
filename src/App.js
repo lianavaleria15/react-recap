@@ -1,5 +1,7 @@
+import { Header } from "./components/Header";
+
 export const App = () => {
-  return <h1> First recap practice</h1>;
+  return <Header title="UUID Generator" subtitle="Online UUID generator" />;
 };
 
 export default App;
