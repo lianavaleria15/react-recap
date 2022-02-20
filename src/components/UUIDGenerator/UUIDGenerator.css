@@ -28,3 +28,16 @@
 .uuid-item {
   margin-top: 4rem;
 }
+
+.btn-clipboard {
+  background-color: rgb(116, 39, 39);
+  color: white;
+}
+
+.btn-clipboard:hover {
+  background-color: rgb(100, 17, 17);
+}
+
+.btn-copied {
+  background-color: rgb(103, 241, 103);
+}
